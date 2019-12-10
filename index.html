@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>The Grilled Prawn</title>
+</head>
+
+<body>
+
+    <header class="topnav" id="myTopnav">
+        <a href="#home" class="active">The Grilled Prawn</a>
+        <div class="right-side-menu">
+            <a class="active" href="#recipes">Recipes</a>
+            <a href="#drinks">Drinks</a>
+            <a href="#decorations">Decorations</a>
+            <a href="#aboutPrawn">About The Grilled Prawn</a>
+            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <section>
+        <div class="banner-section">
+            <img src="images/recipe3.png" alt="Image Not Found">
+            <div class="banner-text">
+                <span>LATEST RECIPE</span>
+                <h1>Baked Polenta with Cheese and Mushrooms.</h1>
+                <p>Polenta, goat cheese, italian sausage and cremini mushrooms.
+                    All together this will make for pretty darn good side dish to a lovely salad. Go for it.
+                </p>
+                <a class="nav-btn" href="#gotorecipe">Go to recipe <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="body-section">
+            <h1>Our Recipes</h1>
+
+            <div class="filter-section">
+                <div class="search-bar">
+                    <div>
+                        <span>Filter recipes by</span>
+                        <span><i class="fa fa-minus" aria-hidden="true"></i></span>
+                    </div>
+                    <div>
+                        <span>Sort by</span>
+                        <select>
+                            <option value="volvo">Newest First</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span> Search recipe</span>
+                        <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filters">
+                <div>
+                    <p class="filter-heading">Food type :</p>
+                    <p>
+                        <input type="radio" id="test1" name="radio-group" checked>
+                        <label for="test1" class="food-type-text">Appetisers</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="test2" name="radio-group">
+                        <label for="test2" class="food-type-text">Mains</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="test3" name="radio-group">
+                        <label for="test3" class="food-type-text">Desserts</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="test4" name="radio-group">
+                        <label for="test4" class="food-type-text">Special Occasions</label>
+                    </p>
+                </div>
+
+                <div>
+                    <p class="filter-heading">Nationality :</p>
+                    <p>
+                        <input type="radio" id="test5" name="radio-group-1" checked>
+                        <label for="test5">Italian</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="test6" name="radio-group-1">
+                        <label for="test6">French</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="test7" name="radio-group-1">
+                        <label for="test7">Spanish</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="test8" name="radio-group-1">
+                        <label for="test8">Peruvian</label>
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <input type="radio" id="test9" name="radio-group-2" checked>
+                        <label for="test9">Chinese</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="test10" name="radio-group-2">
+                        <label for="test10">Indian</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="test11" name="radio-group-2">
+                        <label for="test11">Thai</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="test12" name="radio-group-2">
+                        <label for="test12">Norwegian</label>
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <input type="radio" id="test13" name="radio-group-3" checked>
+                        <label for="test13">Polish</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="test14" name="radio-group-3">
+                        <label for="test14">Danish</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="test15" name="radio-group-3">
+                        <label for="test15">Belgian</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="test16" name="radio-group-3">
+                        <label for="test16">Persian</label>
+                    </p>
+                </div>
+            </div>
+
+            <div class="tiles-wrapper">
+                <div class="tile">
+                    <div class="tile-text">
+                        <span>5TH MARCH 2016</span>
+                        <span>THAI</span>
+                        <p>Thai Yellow CurryNoodles with Shiitake Mushrooms</p>
+                    </div>
+                    <img src="images/recipe1.jpg" alt="Image Not Found">
+                </div>
+                <div class="tile">
+                    <div class="tile-text">
+                        <span>17TH MARCH 2016</span>
+                        <span>ITALIAN</span>
+                        <p>Cappellini with Cherry Tomatoes and Fresh Basil</p>
+                    </div>
+                    <img src="images/recipe2.png" alt="Image Not Found">
+                </div>
+                <div class="tile">
+                    <div class="tile-text">
+                        <span>4TH APRIL 2016</span>
+                        <span>ITALIAN</span>
+                        <p>Baked Turkey Sausage and Mascarpone Stuffed Shells</p>
+                    </div>
+                    <img src="images/recipe3.png" alt="Image Not Found">
+                </div>
+                <div class="tile">
+                    <div class="tile-text">
+                        <span>24TH MAY 2016</span>
+                        <span>ITALIAN</span>
+                        <p>Caramelised Apple and Herb Fiocchi</p>
+                    </div>
+                    <img src="images/recipe4.png" alt="Image Not Found">
+                </div>
+            </div>
+            <div class="tiles-wrapper">
+                <div class="tile">
+                    <div class="tile-text">
+                        <span>25TH MAY 2016</span>
+                        <span>SPANISH</span>
+                        <p>Pumpkin Beer Cheese Soup</p>
+                    </div>
+                    <img src="images/recipe5.png" alt="Image Not Found">
+                </div>
+                <div class="tile">
+                    <div class="tile-text">
+                        <span>22TH SEPTEMBER 2016</span>
+                        <span>THAI</span>
+                        <p>Yum Woon Sen with Shrimp(Glass noodle salad with Shrimp)</p>
+                    </div>
+                    <img src="images/recipe6.png" alt="Image Not Found">
+                </div>
+                <div class="tile">
+                    <div class="tile-text">
+                        <span>14TH OCTOBER 2016</span>
+                        <span>Thai</span>
+                        <p>Beef Satay</p>
+                    </div>
+                    <img src="images/recipe7.png" alt="Image Not Found">
+                </div>
+                <div class="tile">
+                    <div class="tile-text">
+                        <span>29TH OCTOBER 2016</span>
+                        <span>FRENCH</span>
+                        <p>Creamy French Onion Soup Dip in a Bread Bowl</p>
+                    </div>
+                    <img src="images/recipe8.png" alt="Image Not Found">
+                </div>
+            </div>
+            <div class="tiles-wrapper">
+                <div class="tile">
+                    <div class="tile-text">
+                        <span>11TH NOVEMBER 2016</span>
+                        <span>SPANISH</span>
+                        <p>Bocadillo Bites</p>
+                    </div>
+                    <img src="images/recipe9.png" alt="Image Not Found">
+                </div>
+                <div class="tile">
+                    <div class="tile-text">
+                        <span>12TH NOVEMBER 2016</span>
+                        <span>SPANISH</span>
+                        <p>Paella</p>
+                    </div>
+                    <img src="images/recipe10.png" alt="Image Not Found">
+                </div>
+                <div class="tile">
+                    <div class="tile-text">
+                        <span>24TH DECEMBER 2016</span>
+                        <span>THAI</span>
+                        <p>Spicy black Bean Burger</p>
+                    </div>
+                    <img src="images/recipe11.png" alt="Image Not Found">
+                </div>
+                <div class="tile">
+                    <div class="tile-text">
+                        <span>9TH JANUARY 2017</span>
+                        <span>ITALIAN</span>
+                        <p>Fresh Fig and Pistachio Salad</p>
+                    </div>
+                    <img src="images/recipe11.png" alt="Image Not Found">
+                </div>
+            </div>
+            <p class="more-info-links">
+                <a href="#myTopnav">Return to the top <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+            </p>
+            <div class="container">
+                <div>
+                    <span class="banner-text-form">Spread the word!</span>
+                    <span class="side-text">Our recipes are awesome, sign up to our newsletter and
+                        invite friends to join the Grilled Prawn Cult</span>
+                </div>
+                <div id="newsletter-form">
+                    <div class="input-elements">
+                        <div class="single-element">
+                            <label class="salutation">Name</label>
+                            <input class="size-input-element" type="text" />
+                        </div>
+                
+                        <div class="single-element">
+                            <label class="salutation">Surname</label>
+                            <input class="size-input-element" type="text" />
+                        </div>
+                
+                        <div class="single-element">
+                            <label class="salutation">Email</label>
+                            <input class="size-input-element" type="email" />
+                        </div>
+                
+                        <div id="actions" class="single-element">
+                            <button class="add-friend-button" type="button" onclick="submit(this)">Add Friend</button>
+                            <button class="remove-icon-button hide" onclick="remove(this)" type="button"><i class="fas fa-trash"></i>Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-button">
+                    <button class="submit-details" type="button" onclick="sendEmail()">Send<i class="fas fa-arrow-right"></i></button>
+                </div>
+            
+            
+            </div>
+
+            <div class="footer">
+                <div class="footer-section">
+                    <span class="footer-heading">Our Recipes</span>
+                    <p class="footer-description">All our recipes are tested  thoroughly by us to make sure they're  suitable for your 
+                    kitchen at home.We know many of you are concered about healthy eating, so we send them
+                    to a qualified nutritionist for thorough analysis too.</p>
+                    <a class="more-info-links">Browse our recipes now.</a>
+                </div>
+
+                <div class="footer-section">
+                    <span class="footer-heading"> Grilled Prawn's History</span>
+                    <p class="footer-description"> The Grilled Prawn is a fictional food blog created in January 2015.</p>
+                </div>
+
+                <div class="footer-section">
+                    <span class="footer-heading"> Tips and Tricks</span>
+                    <p class="footer-description"> Not sure how to do something? Don't panic. We have plenty of tutorials for  you. </p>
+                    <a class="more-info-links">Learn more</a>
+                </div>
+
+                <div class="footer-section">
+                    <span class="footer-heading">Help and Contact</span>
+                    <p class="footer-description"> Struggling with one of the  recipes?</p>
+                    <a class="more-info-links">Send us an email</a>
+                    <p class="footer-description">We are always happy to try <br> new things, send us your suggestions!</p>
+                    <a class="more-info-links"> Fill in the form</a>
+                </div>
+
+                <div class="footer-section">
+                    <span class="footer-description">&copy; Grilled Prawn's History</span>
+                    <p class="footer-description"> Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore et  dolore magna aliqua. </p>
+                </div>
+
+            </div>
+        </div>
+
+
+		
+    </section>
+	
+    <script src="js/main.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
