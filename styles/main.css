@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto";
+  margin: 0;
 }
 /* navigation panel */
 .topnav {
@@ -129,7 +130,7 @@ body {
     padding: 10px 70px;
     box-sizing: border-box;
 }
-.body-section h1 {
+.body-section > h1 {
     font-size: 40px;
     color: #4a4a4a;
     font-weight: 700;
@@ -161,10 +162,31 @@ body {
     padding: 5px 15px 0;
     color: #4a4a4a;
     font-size: 18px;
+    width: 38%;
+}
+.filter-section .search-bar div:last-child input {
+    float: right;
+    font-size: 18px;
+    color: #4a4a4a;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    background: transparent;
+    width: 10vw;
+}
+.filter-section .search-bar div:last-child button{
+    float: right;
+    color: #4a4a4a;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+    padding: 4px 0;
+    cursor: pointer;
 }
 .filter-section .search-bar div:last-child {
      float: right;
      padding-top:10px;
+     width: 30%;
 }
 .filter-section .search-bar div:last-child span {
     float: right;
@@ -246,7 +268,7 @@ body {
 }
 /* tiles */
 .tiles-wrapper {
-    margin: 40px 0;
+    margin: 20px 0;
     display: table;
 }
 .tiles-wrapper .tile {
@@ -282,7 +304,15 @@ body {
     color: #4a4a4a;
     font-weight: 300;
 }
+@media screen and (max-width: 1160px) {
+    .filter-section .search-bar div:last-child input {
+        width: 11.6vw;
+    }
+}
 @media screen and (max-width: 991px) {
+    .filter-section .search-bar div:last-child input {
+        width: 14vw;
+    }
     .tiles-wrapper .tile {
         width: 50%;
         display: inline-block;
@@ -298,6 +328,18 @@ body {
     }
     .banner-section img {
         width: 60%;
+    }
+    .filter-section .search-bar div:first-child {
+        padding: 10px 2px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .filter-section .search-bar div:last-child input {
+        width: 15vw;
+    }
+    .filter-section .search-bar div:last-child button {
+        /* padding: 1vh 0; */
     }
 }
 @media screen and (max-width: 768px) {
@@ -324,9 +366,22 @@ body {
     .filter-section .search-bar div:last-child {
         float: none;
         padding: 10px;
+        width: 100%;
     }
     .filter-section .search-bar div:nth-child(2) {
-        padding: 5px 10px 0;
+        padding: 15px 10px 0 0;
+        width: 100%;
+    }
+    .filter-section .search-bar div:last-child input {
+        width: 90%;
+        padding: 10px 0;
+    }
+    .filter-section .search-bar div:last-child button {
+        /* padding: 1.5vh 0; */
+        float: left;
+    }
+    .filter-section .search-bar div:last-child button i{
+        padding: 10px 0;
     }
     .filters div {
         width: 48%;
@@ -373,7 +428,9 @@ body {
     font-family: "Roboto";
     font-weight: 300;
 }
-
+.copyright-section .footer-description {
+    font-size: 18px;
+}
 .more-info-links{
     font-size: 14px;
     letter-spacing: 0px;
@@ -421,6 +478,7 @@ body {
     font-family: "Roboto_Medium";
     font-size: 40px;
     display:block;
+    margin: 0;
 }
 
 .side-text{
@@ -452,6 +510,7 @@ body {
 .size-input-element{
     border:none;
     margin-left:1%;
+    padding: 0 15px;
     margin-right:6%;
     height: 50px;
     border-radius: 4px;
@@ -465,6 +524,7 @@ body {
     font-size:18px;
 }
 .submit-details{
+    cursor: pointer;
     color:black;
     width: 183px;
     height: 50px;
@@ -480,6 +540,7 @@ body {
     margin:40px;
 }
 .add-friend-button{
+    cursor: pointer;
     width: 70%;
     height: 50px;
     border-radius: 4px;
@@ -495,6 +556,7 @@ i {
     padding:10px;
 }
 .remove-icon-button{
+    cursor: pointer;
     width: 70%;
     height: 50px;
     border:none;

@@ -1,4 +1,3 @@
-const ALLOWED_LENGTH_OF_FORM = 5;
 
 const openMenu = () => {
     let x = document.getElementById("myTopnav");
@@ -15,12 +14,6 @@ Maintains the number of forms added and limits the number to ALLOWED_LENGTH_OF_F
 Show/Hide "Add Friend" and "Remove" Button
 */
 const submit = (event) => {
-    // Checks the number of forms in the HTML and restricts adding if number is equal to ALLOWED_LENGTH_OF_FORM
-    if(document.getElementById("newsletter-form").children.length === ALLOWED_LENGTH_OF_FORM){
-        alert("Maximum 5 Elements can be added");
-        return;
-    }
-
     // Document Object to Show/Hide Button by toggling Classes
     let add_button = document.getElementsByClassName("add-friend-button");
     let remove_button = document.getElementsByClassName("remove-icon-button");

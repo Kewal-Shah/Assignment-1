@@ -10,7 +10,7 @@
 
 <body>
 
-    <header class="topnav" id="myTopnav">
+    <nav class="topnav" id="myTopnav">
         <a href="#home" class="active">The Grilled Prawn</a>
         <div class="right-side-menu">
             <a class="active" href="#recipes">Recipes</a>
@@ -21,7 +21,7 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-    </header>
+    </nav>
 
     <section>
         <div class="banner-section">
@@ -55,8 +55,8 @@
                         </select>
                     </div>
                     <div>
-                        <span> Search recipe</span>
-                        <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                        <input type="text" placeholder="Search recipe" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
             </div>
@@ -248,25 +248,25 @@
             </p>
             <div class="container">
                 <div>
-                    <span class="banner-text-form">Spread the word!</span>
-                    <span class="side-text">Our recipes are awesome, sign up to our newsletter and
-                        invite friends to join the Grilled Prawn Cult</span>
+                    <h1 class="banner-text-form">Spread the word!</h1>
+                    <h2 class="side-text">Our recipes are awesome, sign up to our newsletter and
+                        invite friends to join the Grilled Prawn Cult</h2>
                 </div>
                 <div id="newsletter-form">
                     <div class="input-elements">
                         <div class="single-element">
                             <label class="salutation">Name</label>
-                            <input class="size-input-element" type="text" />
+                            <input class="size-input-element"  placeholder="Enter Name" type="text" />
                         </div>
                 
                         <div class="single-element">
                             <label class="salutation">Surname</label>
-                            <input class="size-input-element" type="text" />
+                            <input class="size-input-element" placeholder="Enter Surname" type="text" />
                         </div>
                 
                         <div class="single-element">
                             <label class="salutation">Email</label>
-                            <input class="size-input-element" type="email" />
+                            <input class="size-input-element" placeholder="Enter an Email address" type="email" />
                         </div>
                 
                         <div id="actions" class="single-element">
@@ -310,7 +310,7 @@
                     <a class="more-info-links"> Fill in the form</a>
                 </div>
 
-                <div class="footer-section">
+                <div class="footer-section copyright-section">
                     <span class="footer-description">&copy; Grilled Prawn's History</span>
                     <p class="footer-description"> Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore et  dolore magna aliqua. </p>
                 </div>
